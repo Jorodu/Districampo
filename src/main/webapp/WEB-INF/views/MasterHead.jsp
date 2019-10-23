@@ -81,6 +81,7 @@
 					<li class="nav-item mx-lg-4 my-lg-0 my-3">
 						<a class="nav-link" href="#divNosotros">Nosotros</a>
 					</li>
+                                        <!--Validacion del usuario si es  -->
                                         <c:if test="${currentUser != null}">
                                             <li class="nav-item dropdown">
                                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"

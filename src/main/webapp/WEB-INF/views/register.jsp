@@ -9,7 +9,7 @@
                   <div class="form-group" style="text-align:left;">
                     <label for="exampleInputPassword1">Rol</label>                    
                     <select class="form-control" id="sltPerfil" name="sltPerfil">
-                        <option value="-1">Seleccione</option>
+                        <option value="-1">Seleccione...</option>
                         <option value="1">Productor</option>
                         <option value="2">Distribuidor</option>
                     </select>
@@ -51,12 +51,13 @@
                     <input type="password" class="form-control" id="txtClave" placeholder="Repetir Password" name="txtClave">
                   </div>
                   <button type="submit" class="btn btn-primary">Registrar</button>                                
-                  <c:if test="${error == 'true'}">
-                    <div class="alert alert-danger">
+                  <c:if test="${error == 'true'}">                  
+                      <div class="alert alert-danger">
                         <spring:message text="Contraseña o usuario incorrecto"/>
                         <br/>
                     </div>
                   </c:if>
+                      
             </form>
         </div>        
     </div>        
